@@ -25,7 +25,7 @@ public class AlgorithmController {
 
     @GetMapping("/quickSort")
     public String quickSort() {
-        this.quickSort.sort();
+        this.quickSort.sort(new int[]{1,3,2,5,4,9,6,10,7, -10, 100, 0, 11});
         return "quick Sort";
     }
 }

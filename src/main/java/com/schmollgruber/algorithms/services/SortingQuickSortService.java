@@ -5,16 +5,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class SortingQuickSortService {
 
-    // public void sort(int[] A, int low, int high){
-    public void sort(){
+    public void sort(int[] A){
 
-        int[] A = new int[]{1,3,2,5,4,9,6,10,7, -10, 100, 0, 11};
         int low = 0;
         int high = A.length;
 
         A = quickSort(A, low, high);
 
-        System.out.println("Result of sorting: \n");
+        System.out.println("\nResult of sorting: \n");
         for (int i = 0; i <A.length ; i++) {
             System.out.print(A[i] + ", ");
         }

@@ -32,7 +32,7 @@ public class SortingMergeSortService {
 
         }
 
-        System.out.println("Result of sorting: \n");
+        System.out.println("\nResult of sorting: \n");
         for (int i = 0; i < n; i++) {
             System.out.print(A[i] + ", ");
         }
