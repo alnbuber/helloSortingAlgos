@@ -25,6 +25,4 @@ public class ItemController {
     public List<Item> fetchAll(){
         return this.itemService.fetchAllItems();
     }
-
-
 }
