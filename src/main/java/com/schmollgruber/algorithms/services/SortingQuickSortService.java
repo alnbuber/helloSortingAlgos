@@ -3,7 +3,7 @@ package com.schmollgruber.algorithms.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SortingQuickSortService {
+public class SortingQuickSortService extends Thread{
 
     public void sort(int[] A){
 
@@ -56,5 +56,10 @@ public class SortingQuickSortService {
         A[high-1] = temp;
 
         return i;
+    }
+
+    @Override
+    public void run() {
+
     }
 }
